@@ -1,16 +1,18 @@
 import pandas as pd
 import os
 
-# Correct relative paths for Linux/Windows compatibility
+# Paths
 input_path = "data/dataset.csv"
 output_path = "data/processed_dataset.csv"
 
-# Make sure the data folder exists
+# Make sure the output folder exists
 os.makedirs("data", exist_ok=True)
 
-# Read and deduplicate
+# Load and clean dataset
 df = pd.read_csv(input_path)
 df_clean = df.drop_duplicates()
+
+# Save cleaned dataset
 df_clean.to_csv(output_path, index=False)
 
 # Output number of duplicates removed
