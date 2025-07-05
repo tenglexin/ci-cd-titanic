@@ -15,5 +15,5 @@ df_clean = df.drop_duplicates()
 # Save cleaned dataset
 df_clean.to_csv(output_path, index=False)
 
-# Output number of duplicates removed
-print(f"✅ Removed {len(df) - len(df_cleaned)} duplicate rows.")
+# Print result (uses df_clean, not df_cleaned)
+print(f"✅ Removed {len(df) - len(df_clean)} duplicate rows.")
