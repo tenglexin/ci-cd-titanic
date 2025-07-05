@@ -2,8 +2,8 @@ import pandas as pd
 import os
 
 # Set the full path to your dataset
-input_path = r"C:\Users\HP\Desktop\data\dataset.csv"
-output_path = r"C:\Users\HP\Desktop\data\processed_dataset.csv"
+input_path = r"C:\Users\HP\Desktop\ci-cd-titanic\data\dataset.csv"
+output_path = r"C:\Users\HP\Desktop\ci-cd-titanic\data\processed_dataset.csv"
 
 # Load dataset
 df = pd.read_csv(input_path)
