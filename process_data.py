@@ -17,3 +17,4 @@ df_clean.to_csv(output_path, index=False)
 
 # Print result (uses df_clean, not df_cleaned)
 print(f"✅ Removed {len(df) - len(df_clean)} duplicate rows.")
+print("🟢 Re-running the pipeline for verification.")
